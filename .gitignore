@@ -1,17 +1,21 @@
-# Vivado generated
+# Vivado generated / local state
+.Xil/
 *.jou
 *.log
 *.str
-*.xpr
-*.xml
-.Xil/
-.vivado/
-.cache/
-.hw/
-.ip_user_files/
-.runs/
-.sim/
+*.zip
 
-# OS junk
+# Project / runs (do NOT version-control these)
+*.xpr
+*.runs/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.sim/
+*.srcs/sources_1/bd/*/ip/*
+*.sdk/
+
+# OS/editor
 .DS_Store
 Thumbs.db
+.vscode/
