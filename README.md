@@ -16,18 +16,17 @@ The goal of this template is to:
 - Support both **batch (CI-style)** and **GUI-based** development
 
 Repository Structure
-vivado-tcl-template/
-├── rtl/            # HDL source files (Verilog / SystemVerilog / VHDL)
-├── constraints/    # XDC timing and pin constraints
-├── scripts/        # Vivado TCL scripts (project creation, build, synth, impl)
-│   └── vivado/
-│       ├── create_project.tcl
-│       ├── build_bitstream.tcl
-│       └── run_sim.tcl
-├── docs/           # Documentation and design notes
-├── build/          # Generated Vivado project (ignored by git)
-├── README.md       # Project overview and usage instructions
-└── .gitignore      # Excludes Vivado-generated artifacts
+vivado-tcl-template
+- rtl/            # HDL source files (Verilog / SystemVerilog / VHDL)
+- constraints/    # XDC timing and pin constraints
+- scripts/        # Vivado TCL scripts (project creation, build, synth, impl)
+	- create_project.tcl
+	- build_bitstream.tcl
+	- run_sim.tcl
+- docs/           # Documentation and design notes
+- build/          # Generated Vivado project (ignored by git)
+- README.md       # Project overview and usage instructions
+- .gitignore      # Excludes Vivado-generated artifacts
 
 
 Directory Intent
