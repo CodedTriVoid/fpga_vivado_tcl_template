@@ -1,21 +1,65 @@
-# Vivado generated / local state
+##############################################################
+# Generated build output (source-of-truth is repo, not tools)
+##############################################################
+build/
+
+##############################################
+# Vivado / Xilinx / AMD FPGA tool artifacts
+##############################################
+# Project & run artifacts
 .Xil/
 *.jou
 *.log
 *.str
-*.zip
-
-# Project / runs (do NOT version-control these)
-*.xpr
+*.cache
 *.runs/
-*.cache/
+*.gen/
 *.hw/
 *.ip_user_files/
-*.sim/
-*.srcs/sources_1/bd/*/ip/*
-*.sdk/
 
-# OS/editor
+# Simulation databases & waveforms (generated)
+*.wdb
+*.wlf
+*.vcd
+*.fsdb
+
+# Temporary or auto-generated HDL
+*_sim_netlist.v
+*_synth_netlist.v
+*.pb
+*.rpt
+*.xml
+
+
+# IP & Block Design generated output (configs should be scripted)
+
+# Generated IP output — keep only .xci or TCL regen scripts
+ip/**/generated/
+ip/**/sim/
+ip/**/synth/
+ip/**/impl/
+
+########################
+# Checkpoints & debug
+########################
+*.dcp
+*.ltx
+
+##########################
+# OS / Editor / IDE noise
+##########################
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
 .DS_Store
 Thumbs.db
-.vscode/
+
+################
+# Logs & misc
+################
+*.pid
+*.out
+*.err
