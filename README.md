@@ -1,5 +1,5 @@
 # fpga_vivado_tcl_template
-This repository is a template and guideline for vivado projects using tcl  
+This repository is a template for vivado projects using tcl  
 =======
 Vivado TCL Template
 Overview
@@ -25,29 +25,23 @@ vivado-tcl-template/
 └── .gitignore      # Excludes Vivado-generated artifacts
 
 Directory Intent
+### Tracked in Git
+- RTL (`rtl/`)
+- Testbenches (`tb/`)
+- Constraints (`constraints/`)
+- TCL scripts (`scripts/`)
+- Documentation (`docs/`)
 
-rtl/
-Hand-written RTL only. No generated files.
+### Ignored by Git
+- Vivado projects (`.xpr`)
+- Build outputs (`.runs`, `.cache`, `.Xil`, bitstreams)
+- Simulation databases
 
-constraints/
-Explicit timing, clock, and pin constraints (.xdc).
-
-scripts/
-TCL scripts that:
-- Create the Vivado project
-- Add sources and constraints
-- Run synthesis and implementation
-- Generate bitstreams
-
-docs/
+Documents
 - Design rationale, block diagrams, notes, and assumptions.
-
 - Design Philosophy
-
-- TCL is the source of truth
 
 No Vivado GUI files are committed
 Generated outputs are disposable
-Projects are reproducible from scratch
 
 If the repository is cloned on a new machine, the project should be rebuildable without manual GUI interaction for version control
