@@ -1,13 +1,19 @@
-<<<<<<< HEAD
 # fpga_vivado_tcl_template
 This repository is a template and guideline for vivado projects using tcl  
 =======
 Vivado TCL Template
 Overview
 
-This repository provides a clean, reproducible project template for working with Xilinx Vivado using TCL as the source of truth.
+This repository provides a **reproducible, version-controlled workflow** for creating and managing AMD/Xilinx Vivado FPGA projects using **TCL scripts**.
+
 
 Instead of relying on GUI-generated project files, all project creation, configuration, and build steps are driven through TCL scripts and version-controlled text files. This approach improves portability, reviewability, and long-term maintainability.
+
+The goal of this template is to:
+- Separate **source-of-truth design files** from tool-generated artifacts
+- Enable **clean Git version control** for FPGA projects
+- Allow Vivado projects to be **fully regenerated from scripts**
+- Support both **batch (CI-style)** and **GUI-based** development
 
 Repository Structure
 vivado-tcl-template/
@@ -28,27 +34,20 @@ Explicit timing, clock, and pin constraints (.xdc).
 
 scripts/
 TCL scripts that:
-
-Create the Vivado project
-
-Add sources and constraints
-
-Run synthesis and implementation
-
-Generate bitstreams
+- Create the Vivado project
+- Add sources and constraints
+- Run synthesis and implementation
+- Generate bitstreams
 
 docs/
-Design rationale, block diagrams, notes, and assumptions.
+- Design rationale, block diagrams, notes, and assumptions.
 
-Design Philosophy
+- Design Philosophy
 
-TCL is the source of truth
+- TCL is the source of truth
 
 No Vivado GUI files are committed
-
 Generated outputs are disposable
-
 Projects are reproducible from scratch
 
-If the repository is cloned on a new machine, the project should be rebuildable without manual GUI interaction.
->>>>>>> baf7350 (Initial Vivado TCL-based project structure)
+If the repository is cloned on a new machine, the project should be rebuildable without manual GUI interaction for version control
